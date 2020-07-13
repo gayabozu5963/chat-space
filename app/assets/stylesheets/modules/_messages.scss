@@ -37,8 +37,7 @@
   }
   &__group-list {
     width: 260px;
-    height: 91px;
-    margin: 0 20px;
+    padding: 0 20px;
     font-weight: bold;
     color: #ffffff;
     .group-list__name {
@@ -92,6 +91,7 @@
   }
   .Chat-main__message-list {
     height: calc(100vh - 190px);
+    padding: 35px 40px;
     .message-information {
       margin: 35px 0 12px 40px;
       display: flex;
@@ -115,6 +115,7 @@
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px;
+    box-sizing: border-box;
     .new__message {
       display: flex;
       .input-box {
@@ -146,6 +147,7 @@
         margin-left: 15px;
         background-color: #38aef0;
         color: white;
+        border-style: none;
         cursor: pointer;
       }
     }
