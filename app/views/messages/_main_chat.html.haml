@@ -9,9 +9,8 @@
           = user.name
     .right-header
       .edit-btn
-        = link_to edit_group_path(@group.id), class: "edit-btn" do
+        = link_to edit_group_path(@group.id), class: 'btn' do
           Edit
-      .null-box
   .Chat-main__message-list
     = render @messages
     

@@ -35,17 +35,19 @@
     }
   }
   &__group-list {
-    width: 260px;
+    height: calc(100vh - 100px);
     padding: 0 20px;
     font-weight: bold;
-    color: #ffffff;
+    background-color: #2f3e51;
     .group-list__name {
-      margin-top: 20px;
+      padding-top: 20px;
       font-size: 15px;
+      color: #ffffff;
     }
     .group-list__message {
       margin: 5px 0 40px 0;
       font-size: 11px;
+      color: #ffffff;
     }
   }
 }
@@ -56,44 +58,51 @@
   background-color: #ffffff;
   &__group-info {
     height: 100px;
+    padding: 0 40px;
+    border-bottom: solid 1px #eee;
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     .left-header {
       
       .group-name {
-        margin: 35px 0 0 40px;
+        padding-top: 35px;
         font-size: 20px;
         color: #333333;
       }
       .member-name {
-        margin: 15px 0 0 40px;
+        padding-top: 15px;
         font-size: 12px;
         color: #999999;
       }
     }
     .right-header {
-      width: 112px;
-      display: flex;
-      justify-content: flex-start;
+      // width: 112px;
+      // display: flex;
+      // justify-content: flex-start;
       .edit-btn {
+        display: block;
         height: 40px;
-        margin: 28px 20px 32px 20px;
+        line-height: 40px;
+        margin-top: 28px;
+        padding: 0 20px;
         font-size: 16px;
         color: #38aef0;
-      }
-      .null-box {
-        width: 40px;
-        height: 100px;
+        border: solid 1px #38AEF0;
+        .btn {
+          text-decoration: none;
+          color: #38aef0;
+        }
       }
     }
   }
   .Chat-main__message-list {
     height: calc(100vh - 190px);
-    padding: 35px 40px;
+    // padding: 35px 0  0 40px;
+    background-color: #fafafa;
     overflow: scroll;
     .message-information {
-      margin: 35px 0 12px 40px;
+      padding: 35px 0 12px 40px;
       display: flex;
       .message-name {
         font-size: 16px;
@@ -106,7 +115,7 @@
       }
     }
     .message-text {
-      margin: 0 0 46px 40px;
+      padding: 0 0 46px 40px;
       color: #434A54;
       font-size: 14px;
     }
