@@ -4,7 +4,6 @@
       .top-items__name
         .top-items
           = current_user.name
-          masa
           .top-items__icons
             = link_to new_group_path(current_user), class: "icon-btn" do
               = icon('far', 'edit')
@@ -13,8 +12,8 @@
   .Side-bar__group-list
     - current_user.groups.each do |group|
       .Group
-        = link_to '#' do
+        = link_to group_messages_path(group) do
           .group-list__name
             = group.name
           .group-list__message
-            メッセージはまだありません
+            = group.show_last_message

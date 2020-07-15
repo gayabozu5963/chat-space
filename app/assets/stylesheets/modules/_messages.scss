@@ -91,6 +91,7 @@
   .Chat-main__message-list {
     height: calc(100vh - 190px);
     padding: 35px 40px;
+    overflow: scroll;
     .message-information {
       margin: 35px 0 12px 40px;
       display: flex;
@@ -139,7 +140,7 @@
           display: none;
         }
       }
-      .submit-btn {
+      .input-box__submit-btn {
         width: 100px;
         height: 50px;
         padding: 0 30px;
