@@ -18,8 +18,9 @@ $(function(){
               </p>
               <img class="Message__image" src="${message.image}">
             </div>
-          </div>`
-        return html;
+          </div>
+        </div>`
+      return html;
     } else {
       let html =
       `<div class="message-information" data-message-id=${message.id}>
@@ -37,10 +38,11 @@ $(function(){
               ${message.content}
             </p>
           </div>
-        </div>`
-        return html;
+        </div>
+      </div>`
+      return html;
     };
-  }
+  } 
 
   $('.input-box').on('submit', function(e){
     e.preventDefault();
@@ -62,7 +64,8 @@ $(function(){
       $('.input-box__submit-btn').prop('disabled', false);
     })
     .fail(function() {
-         alert("メッセージ送信に失敗しました");
-     });
-  })
+      alert("メッセージ送信に失敗しました");
+      $('.input-box__submit-btn').prop("disabled",false);
+    });
+  });
 });
