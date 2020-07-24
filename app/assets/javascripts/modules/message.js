@@ -59,8 +59,9 @@ $(function(){
     .done(function(data){
       let html = buildHTML(data);
       $('.Chat-main__message-list').append(html);
+      $('input-box')[0].reset();
       $('.Chat-main__message-list').animate({ scrollTop: $('.Chat-main__message-list')[0].scrollHeight});
-      $('#message_content').val('');
+      // $('#message_content').val('');
       $('.input-box__submit-btn').prop('disabled', false);
     })
     .fail(function() {
